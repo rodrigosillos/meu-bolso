@@ -1,16 +1,35 @@
-# meu_bolso
+# Meu Bolso
 
-A new Flutter project.
+**Meu Bolso** é um aplicativo simples e intuitivo para controle de despesas pessoais. O objetivo é permitir que os usuários registrem e visualizem suas despesas de forma rápida e prática.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Funcionalidades
 
-A few resources to get you started if this is your first Flutter project:
+- ✅ Adicionar despesas com descrição, valor e data.
+- ✅ Visualizar a lista de despesas cadastradas.
+- ✅ Interface amigável e minimalista.
+- ✅ Persistência de dados utilizando [Hive](https://pub.dev/packages/hive).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tecnologias Utilizadas
+
+- **Flutter**: Framework para construção de aplicações multiplataforma.
+- **Hive**: Banco de dados local rápido e leve para persistência de dados offline.
+- **Dart**: Linguagem de programação para desenvolvimento do app.
+
+---
+
+## Estrutura do Projeto
+
+```plaintext
+lib/
+├── data/
+│   ├── hive_database.dart         # Operações relacionadas ao banco de dados Hive
+├── models/
+│   ├── expense.dart               # Modelo de dados para despesas
+├── screens/
+│   ├── home_screen.dart           # Tela inicial com a lista de despesas
+│   ├── add_expense_screen.dart    # Tela para adicionar novas despesas
+├── main.dart                      # Ponto de entrada do aplicativo
